@@ -7,9 +7,9 @@ The main functionalities of the platform are:
 
 # Task 1 (Friendship Network)
 
-To track friendships between users, a graph implemented with lists is used. This implementation was chosen because using a matrix would not have been efficient.
-The functions 'Add Friend' and 'Remove Friend' simply involve adding or removing links between nodes in this graph.
-For 'Find Distance', the shortest path between two nodes is found using BFS. Two vectors, visited and distance, are created to keep track of the visited nodes and the distance between the source node and the other nodes.
+* To track friendships between users, a graph implemented with lists is used. This implementation was chosen because using a matrix would not have been efficient.
+* The functions 'Add Friend' and 'Remove Friend' simply involve adding or removing links between nodes in this graph.
+* For 'Find Distance', the shortest path between two nodes is found using BFS. Two vectors, visited and distance, are created to keep track of the visited nodes and the distance between the source node and the other nodes.
 'Suggestions' performs a BFS search only for the neighbors of the source node, resulting in a list containing the friends of friends who are not already friends with a given user.
 In 'Common Friends', each friend from the first user's list is checked to see if they also exist in the second user's list.
 'Number of Friends' returns the number of connections a person has, using the graph implemented with lists. The number of connections represents the number of neighbors a node has.
